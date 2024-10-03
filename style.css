@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid #262222;
+    padding: 30px;
+    background-color: #262222;
+}
+
+#expenses h1 {
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: white;
+}
+
+#expenses div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+#expenses div input {
+    padding: 3px 0px 3px 15px;
+    flex: 1;
+    height: 38px;
+    border: 1px solid rgb(88, 84, 80);
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(88, 84, 80);
+    color: white;
+    transition: all .2s ease;
+}
+
+#expenses div input::placeholder {
+    color: white;
+}
+
+#expenses div input:focus-within {
+    border-color: blue;
+}
+
+#expenses div button {
+    padding: 9px 14px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    transition: all .2s ease-in;
+}
+
+#expenses div button:hover {
+    cursor: pointer;
+    border-color: rgb(11, 11, 194);
+    background-color: rgb(11, 11, 194);
+}
+
+/* show-expenses */
+
+#show-expenses {
+    padding: 30px 0px;
+}
+
+#expenses-data {
+    background-color: rgb(13, 81, 115) !important;
+    padding: 10px 25px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+#expenses-data li {
+    width: auto !important;
+}
+
+#show-expenses h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: 500;
+}
+
+#show-expenses .ul {
+    background-color: rgb(35, 105, 95);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+#show-expenses ul li {
+    font-size: 17px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+#show-expenses ul button {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    transition: all .2s ease;
+}
+
+
+#show-expenses ul button:hover {
+    cursor: pointer;
+    border-color: rgb(194, 14, 14);
+    background-color: rgb(194, 14, 14);
+}
+
+#total-expense {
+    text-align: center;
+    font-size: 19x;
+    font-family: sans-serif;
+    color: white;
+    width: max-content;
+    margin: auto;
+    background-color: rgb(20, 20, 232);
+    border: 1px solid rgb(20, 20, 232);
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+
+#total-expense:hover {
+    background-color: rgb(8, 8, 216);
+    border-color: rgb(8, 8, 216);
+}
