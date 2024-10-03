@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function removeExpenseFromLocalStorageAndUpdate(deleteBtn){
-        console.log(deleteBtn);
+
         let removeElement = deleteBtn.parentElement;
         let removeElementId = deleteBtn.getAttribute('data-id')
 
